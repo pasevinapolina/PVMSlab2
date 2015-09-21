@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+	<meta name="author" content="Belov Alexandr,Bychenkov Alexandr,Povazhnaja Svetlana" />
+	<meta name="robots" content="index, all" />
+	<meta name="document-state" content="dynamic" />
+	<meta http-equiv="Cache-Control" content="max-age=7200, must-revalidate" />
+	<meta name="generator" content="Art.Scene.Design [v.4.2]" />
+	<meta name="copyright" content="2001-2015, Art.Scene.Design" />
+	<meta http-equiv="content-type" content="text/html; charset=Windows-1251" />
+	<meta name="yandex-verification" content="6025d8e25740cb7e" />
+	<meta name="keywords" content="Минск погода, прогноз погоды, метеопрогноз, Беларусь, географические координаты, магнитная буря, УФ-индекс, восход и заход Солнца время" />
+	<meta name="description" content="Погодный сервер. Прогноз погоды в Минске, Беларусь на 3 дня. Карты погоды и метеограммы, температура моря, штормпредупреждения и метеоновости. Метеорологические карты." />
+	<meta name="classification" content="Справки. Погода. Беларусь. Погода в Минске текущая и прогноз погоды на 3 дня" />
+	<meta name="category" content="Справки. Прогноз погоды. Температура моря на курортах. Погода в аэропортах. Магнитные бури." />
+ 	<title>POGODA.BY | Погода Минск, Беларусь — прогноз погоды на 3 дня | Гидрометцентр Беларуси</title>
+
+	<link rel="stylesheet" href="tpl/menu/style-4.0.css" type="text/css" />
+	<link rel="stylesheet" href="tpl/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="tpl/css/link.css" type="text/css" />
+	<script type="text/javascript" src="tpl/menu/drop_down.js"></script>
+
+
+
+
+ <link rel="stylesheet" href="tpl/css/I.css" type="text/css">
+
+<!--[if IE]>
+<style type="text/css">
+div#cover{width:expression(((document.compatMode && document.compatMode=='CSS1Compat') ? document.documentElement.clientWidth : document.body.clientWidth) < 1140 ? "1140px" : "auto");}
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+<!--
+	if (window.attachEvent){
+	window.attachEvent('onresize',center);
+	window.attachEvent('onload',center);
+	}else if(window.addEventListener){
+	window.addEventListener('resize',center, false);
+	window.addEventListener('load',center, false);
+	}
+	function center(){
+	var i = document.getElementById('cover');
+	i.style.marginLeft = parseInt(document.body.offsetWidth-i.offsetWidth)/2+'px';
+	};
+-->
+</script><script type="text/javascript">
+function getposOffset(overlay, offsettype){
+		var totaloffset=(offsettype=="left")? overlay.offsetLeft : overlay.offsetTop;
+		var parentEl=overlay.offsetParent;
+		while (parentEl!=null){
+		totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+		parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function overlay(curobj, subobj){
+if (document.getElementById){
+var subobj=document.getElementById(subobj)
+subobj.style.left=getposOffset(curobj, "left")+"px"
+subobj.style.top=getposOffset(curobj, "top")+"px"
+subobj.style.display="block"
+return false
+}else{
+return true
+}
+}
+
+function overlayclose(subobj){
+document.getElementById(subobj).style.display="none"
+}
+</script>
+
+<script type="text/javascript" src="search/search.js"></script>
+
+<script type="text/javascript">
+function on_ENTER(){
+        if (SearchEngine != null){
+        SearchEngine.Execute(document.search.request.value);
+        }
+        return false;
+}
+</script>
+<link rel="stylesheet" href="tpl/menu/citymenu.css" type="text/css"><link rel="shortcut icon" href="/b.ico" type="image/x-icon">
+<link rel="alternate" type="application/rss+xml" title="POGODA.BY | Штормпредупреждения по Беларуси" href="/rss2/storm.php">
+<link rel="alternate" type="application/rss+xml" title="POGODA.BY | Метеоновости" href="/rss2/rss_pogoda.by.php">
+</head>
+
+<!-- body -->
+<body>
+<!-- место №1  -->
+<div style="margin:0; padding:0; text-align:center; border:solid; border-width: 0 0 1px 0; border-color: #474867;">
+</div>
+
+<!--колонтитул верхний-->
+	<div id="header">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="5%"> </td>
+	<td width="65%" valign="top"><a href="/26850" title="POGODA.BY | Tantum possumus, quantum scimus — Мы можем столько, сколько мы знаем. Ф.Бэкон."><img src="tpl/img/logo2-4.5.gif" alt="POGODA.BY. Погода на 3 дня в Минске" border="0"></a></td>
+	<td width="30%" valign="top"><a href="/get/?q=hmc.by" target="_blank"><img src="tpl/img/logo-HMC-pogoda-2.gif" alt= "HMC.BY" align="left" border="0"></a><small><img src='tpl/ico/clock-small.gif' alt='Минск, время ГМТ'>15:18 UTC. 21 сентября 2015<br>
+	<img src="tpl/ico/mail-small.png" alt= "Е-почта" border="0"><small><acronym title="Контакты"><a href="/about/">Контакты</a></acronym></small><br>
+	<a style='border-bottom: 1px dotted;' href="/"><img src="tpl/ico/home-small.png" alt= "в Минске" border="0"></a>
+	&#8594; Минск &#8594; <acronym title="Погода Минск"><a target="_blank" href="/pda/?city=26850">в мобильном</a></acronym></small>
+
+	</td>
+	</tr>
+	</table>
+	</div>
+<!--меню-->
+<div id="top">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="900">
+<tr>
+<td width="18%">
+
+<ul id="M1">
+<li><a href='#' style="cursor:default; color:white;"><u><b>ИНФОРМАЦИЯ</b></u></a>
+	<ul style="visibility: visible">
+		<li>
+		<a href='/news/'>Метеоновости</a>		</li>
+
+		<li>
+		<a href='/press-release/'>Публикации</a>		</li>
+
+		<li>
+		<a href='/glossary/'>Метеословарь</a>		</li>
+
+		<li>
+		<a href='/315/gid.html'>Гидрография рек РБ</a>		</li>
+
+		<li>
+		<a href='/climat-directory/'>Справочник по климату</a>		</li>
+	</ul>
+</li>
+</ul>
+</td>
+
+<td width="18%">
+<ul id="M2">
+<li><a href='#' style="cursor: default; color:white;"><u><b>КАРТЫ ПОГОДЫ</b></u></a>
+	<ul style="visibility: visible">
+ 		<li>
+		<a href='/flmaps/'>Интерактивные карты</a>		</li>
+
+		<li>
+		<a href='/thumbnails/'>Карты погоды</a>		</li>
+
+         <li>
+		<a href='/eumetsat/'>Спутниковые снимки</a>		</li>
+
+		<li>
+		<a href='/thumbnails/?map=radar_map'>Радарные карты</a>		</li>
+
+		<li>
+		<a href='/mg/'>Метеограмма Минск</a>		</li>
+
+
+
+  	</ul>
+</li>
+</ul>
+</td>
+
+<td width="18%">
+<ul id="M3">
+<li><a href='#' style="cursor:default; color:white;"><u><b>НАБЛЮДЕНИЯ</b></u></a>
+	<ul style="visibility:visible">
+
+			<li>
+			<a href='/meteoarchive/'>Метеонаблюдения</a>			</li>
+
+			<li>
+			<a href='/badweather/'>Штормовые сообщения</a>			</li>
+
+            <li>
+			<a href='/avia/'>Погода в аэропортах</a>			</li>
+
+			<li>
+			<a href='/gidroarchive/'>Гидрология </a>			</li>
+
+			<li>
+			<a href='/gidro/'>Температура моря</a>			</li>
+
+			<li>
+			<a href='/uv-gw/geo.php'>Геомагнитная обстановка</a>			</li>
+
+			<li>
+			<a href='/uv-gw/'>Озон и УФ-индекс</a>			</li>
+
+			<li>
+			<a href='/pmsw/'>Солнечная активность</a>			</li>
+
+
+	</ul>
+</li>
+</ul>
+</td>
+
+<td width="18%">
+<ul id="M4">
+<li><a href='#' style="cursor:default; color:white;"><u><b>СЕРВИСЫ</b></u></a>
+	<ul style="visibility: visible">
+
+				<li>
+				<a href='/xml2/'>Информация в XML</a>				</li>
+
+				<li>
+				<a href='/rss2/'>RSS-ленты погоды</a>				</li>
+
+				<li>
+				<a href='/meteoinformer/'>Информеры погоды</a>				</li>
+
+				<li>
+				<a href='/zip/'>Архив метеонаблюдений</a>				</li>
+
+				<li>
+				<a href='/zip-avia/'>Архив авиапогоды</a>				</li>
+
+				<li>
+				<a href='/315/arch_gw.php'>Архив геомагнитный</a>				</li>
+	</ul>
+</li>
+</ul>
+</td>
+
+<td width="18%">
+<ul id="M5">
+<li><a href='#' style="cursor:default; color:white;"><u><b>POGODA.BY</b></u></a>
+<ul style="visibility: visible">
+
+				<li>
+				<a href='/about/'>О сайте</a>				</li>
+
+				<li>
+				<a href='/banners/'>Реклама на POGODA.BY</a>				</li>
+
+				<li>
+				<a href='/search/'>Список городов</a>				</li>
+
+				<li>
+				<a href='http://6.pogoda.by/26850'>Погода в Минске на 6 дней</a>				</li>
+
+				<li>
+				<a href='http://pda.pogoda.by/'>Погода в мобильном</a>				</li>
+
+				<li>
+				<a href='/print/index-2.php' target='_blank'>Старая версия сайта</a>				</li>
+
+	</ul>
+ </li>
+</ul>
+</td>
+<td nowrap width="10%">&nbsp;</td>
+</tr>
+</table></div>
+
+<!--серединка 1400 -->
+<div id="cover">
+<!-- баннер №2 -->
+<!-- баннер №2 конец -->
+
+
+<div style="background: url(tpl/img/downpanel.gif) bottom repeat-x;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="src">
+<tr>
+<td valign="top">
+<!-- если есть фактическая погода. если нет, то ближайшие -->
+<h2>Фактическая погода</h2>
+<p>
+<strong>Минск</strong>   за 12:00 UTC<br>Температура воздуха +14.9°C<br>Ветер 1 м/с,  западный<br>Переменная облачность <br>Влажность 72%<br>Давление 1011 гПа <font color='#999999'>[758 мм]</font>, растет</p>
+</td>
+
+<td width="1%" style="background: url(/tpl/img/brd.gif) repeat-y;"><img src="/tpl/img/brd.gif" alt=""></td>
+<td valign="top">
+<h2>Географические координаты</h2>
+<p>
+<strong>Минск</strong>: 53.92&deg; с.ш. и 27.65&deg;  в.д.<br>
+Часовой пояс: UTC +3 ч</p>
+<p style='margin-bottom:10px;'><b>Минск</b> на карте <script type='text/javascript'>document.write('<a href=https://maps.google.com/maps?ll=53.920000,27.650000&z=13&q=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C+%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C&output=classic&dg=ntvb target=_blank>Google Maps</a>'); </script><br><script type='text/javascript'>document.write('<a href=http://www.wikimapia.org/#lat=53.920000&lon=27.650000&z=13&m=h target=_blank>WikiMapia</a>'); </script><br></p>
+<!-- Партнёрка -->
+<p class = "redlink"></p>
+</td>
+
+
+<td width="1%" style="background: url(/tpl/img/brd.gif) repeat-y;"><img src="/tpl/img/brd.gif" alt=""></td>
+<td valign="top"><h2>Астрономия</h2>
+<p><strong>Восход и заход Солнца в Минске</strong><br>
+Восход: 06:57,&nbsp; заход: 19:07 [местное]</p>
+<p><strong>Сумерки гражданские</strong><br>
+Начало: 06:16,&nbsp; конец: 19:48</p>
+<p><strong>Луна</strong>: растущая
+<br>Освещенность диска 58.4%
+ </p>
+</td>
+<td width="1%" style="background: url(/tpl/img/brd.gif) repeat-y;"><img src="/tpl/img/brd.gif" alt=""></td>
+
+<td valign="top">
+<h2>Магнитные бури</h2>
+<p>Сегодня,  в 12:00 UTC<br>
+<strong>Геомагнитный фон</strong>: <span title="Kp-индекс 2">слабовозмущенный</span><br></p>
+<p>В 15:07 UTC<br>Скорость солнечного ветра: 515.1 км/с<br>Температура плазмы: 53100 K<br>Плотность протонов 3.9 p/см&#179;</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- место №3 -->
+<div class="promo"> <noindex>
+<!--/* OpenX Javascript Tag v2.8.7 */-->
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://80.94.164.94/Admin/openx/www/delivery/ajs.php':'http://80.94.164.94/Admin/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=16");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script>
+<noscript><a href='http://80.94.164.94/Admin/openx/www/delivery/ck.php?n=af15b098&amp;cb=16' target='_blank'><img src='http://80.94.164.94/Admin/openx/www/delivery/avw.php?zoneid=16&amp;cb=16&amp;n=af15b098' border='0' alt='' /></a></noscript>
+</noindex> </div>
+
+<!--Меню города и разделы сайта -->
+<table width="100%" class="src" border="0" cellspacing="0" cellpadding="0"><tr>
+<td width="61%">
+	<table width='*' border='0' style="margin-top: 0px"><tr>
+	<td><h1>Прогноз погоды <font color='red'>Минск</font>, Беларусь</h1>
+</td>
+	<td><div class="search_result" id="result"></div></td>
+	<td nowrap>
+		<form style="margin: 0px 0px 0px 10px" name="search" onsubmit="javascript:return(on_ENTER());">
+		<input class="form" name="request" type="text" maxlength="68" title="Ввести город или индекс ВМО"> <input class="btn" type="submit" value="Найти">
+		</form>
+	</td>
+	<td>
+		<H6 id="M6">
+		<li><a href='#' style='cursor:default' title='Города РБ'> <acronym title='города'>Города РБ</acronym></a>
+		<ol><li>
+<!--[if lt IE 7]><p style='margin:0;'>&nbsp;</p><![endif]-->
+<table class="menu" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr>
+    <td class=sr><a href='/26941'>Барановичи</a></td>
+    <td class=sr><a href='/33001'>Высокое</a></td>
+    <td class=sr><a href='/26864'>Кличев</a></td>
+    <td class=sr><a href='/26649'>Нарочь</a></td>
+    <td class=sl><a href='/26003'>Солигорск</a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26853'>Березино</a></td>
+    <td class=sr><a href='/26947'>Ганцевичи</a></td>
+    <td class=sr><a href='/26887'>Костюковичи</a></td>
+    <td class=sr><a href='/26836'>Новогрудок</a></td>
+    <td class=sl><a href='/26846'>Столбцы</a></td>
+  </tr>
+  <tr>
+    <td class=sr nowrap><a href='/26959'>Березинский зап.</a></td>
+    <td class=sr><a href='/33041'>Гомель</a></td>
+    <td class=sr><a href='/33105'>Лельчицы</a></td>
+    <td class=sr><a href='/26950'>Октябрь</a></td>
+    <td class=sl><a href='/26008'>Речица</a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26961'>Бобруйск</a></td>
+    <td class=sr><a href='/26774'>Горки</a></td>
+    <td class=sr><a href='/26659'>Лепель</a></td>
+    <td class=sr><a href='/26763'>Орша</a></td>
+    <td class=sl><a href='/26974'>Чечерск</a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26759'>Борисов</a></td>
+    <td class=sr><a href='/26825'>Гродно</a></td>
+    <td class=sr><a href='/26832'>Лида</a></td>
+    <td class=sr><a href='/26736'>Ошмяны</a></td>
+    <td class=sl><a href='/26643'>Шарковщина</a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/33124'>Брагин</a></td>
+    <td class=sr><a href='/26657'>Докшицы</a></td>
+    <td class=sr><a href='/26645'>Лынтупы</a></td>
+    <td class=sr><a href='/33019'>Пинск</a></td>
+    <td class=sl><a href='/26834'>Щучин</a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/33008'>Брест</a></td>
+    <td class=sr><a href='/33011'>Дрогичин</a></td>
+    <td class=sr><a href='/26955'>Любань</a></td>
+    <td class=sr><a href='/33015'>Полесская</a></td>
+    <td class=sl nowrap bgcolor="#E6E6E6">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/33038'>Василевичи</a></td>
+    <td class=sr><a href='/26566'>Езерище</a></td>
+    <td class=sr><a href='/26855'>М.Горка</a></td>
+    <td class=sr><a href='/26653'>Полоцк</a></td>
+    <td class=sl><a href='/12375'><b>Варшава</b>&nbsp;<img src="/tpl/img/sh.gif" title= "Города Европы" border="0" width="9" height="10" alt=""></a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26554'>Верхнедвинск</a></td>
+    <td class=sr><a href='/33027'>Житковичи</a></td>
+    <td class=sr><a href='/26850'><acronym title='Столица РБ'><b>Минск</b></acronym></a></td>
+    <td class=sr><a href='/26929'>Пружаны</a></td>
+    <td class=sl><a href='/26730'><b>Вильнюс</b></a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26745'>Вилейка</a></td>
+    <td class=sr><a href='/26966'>Жлобин</a></td>
+    <td class=sr><a href='/26863'>Могилёв</a></td>
+    <td class=sr><a href='/26004'>Светлогорск</a></td>
+    <td class=sl ><a href='/33345'><b>Киев</b>&nbsp;<img src="/tpl/img/sh.gif" title= "Больше городов Украины" border="0" width="9" height="10" alt=""></a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26666'>Витебск</a></td>
+    <td class=sr ><a href='/26034'>Жодино</a></td>
+    <td class=sr><a href='/33036'>Мозырь</a></td>
+    <td class=sr><a href='/26668'>Сенно</a></td>
+    <td class=sl><a href='/27612'><b>Москва</b>&nbsp;<img src="/tpl/img/sh.gif" title= "Больше городов России" border="0" width="9" height="10" alt=""></a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26923'>Волковыск</a></td>
+    <td class=sr><a href='/26938'>Ивацевичи</a></td>
+    <td class=sr><a href='/26001'>Молодечно</a></td>
+    <td class=sr><a href='/26878'>Славгород</a></td>
+    <td class=sl><a href='/26422'><b>Рига</b></a></td>
+  </tr>
+  <tr>
+    <td class=sr><a href='/26748'>Воложин</a></td>
+    <td class=sr><a href='/26020'>Калинковичи</a></td>
+    <td class=sr><a href='/26779'>Мстиславль</a></td>
+    <td class=sr><a href='/26951'>Слуцк</a></td>
+    <td class=sl><a href='/26038'><b>Таллин</b></a></td>
+  </tr>
+</table>
+</ol></li>
+        </H6>
+	</td>
+	<td></td>
+	</tr>
+	</table>
+</td>
+
+<!--разделы -->
+<td width="1%" style="background: url(/tpl/img/brd.gif) repeat-y;"><img src="/tpl/img/brd.gif" alt=""></td>
+<td>
+	<table width="100%" border="0" class="part">
+	  <tr>
+	    <td nowrap width='*'>
+
+ 		&#9642; <a href='http://6.pogoda.by/'>ПОГОДА НА 6 ДНЕЙ</a><br>
+ 		<span style="color:red;">&#9642;</span> <a href='/get/?q=synoptic_forecast' target='_blank' style='color:red;'>МЕТЕОПРОГНОЗ</a>
+	    </td>
+	    <td nowrap width='33%'>
+	    <span style='color:red;'>&#9642;</span> <a href='/search/' style='color:red;'>ДРУГИЕ СТРАНЫ</a><br>
+	    &#9642; <a href='/get/?q=20' target='_blank'>МЕТЕОКАРТЫ</a></td>
+	    <td nowrap width='33%'>
+	    &#9642; <a href='http://pda.pogoda.by/'>ПОГОДА В ТЕЛЕФОН</a><br>
+     	&#9642; <a href='/get/?q=twitter' target='_blank' title='наша Твиттер meteoinfo_by'>TWITTER</a></td>
+	  </tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<!-- сюда прогнозик-->
+<div class="middle"><table width='100%' border='0' cellspacing='0' cellpadding='0' bgcolor='#ffffff' id='forecast'>
+<tr>
+<td id="dt" class='legend' width='245' style='border-bottom: 1px solid #ddd;'>
+<span style="color:#333; font-size: 11px; font-weight: normal;">Прогноз <a href="/about/?information=forecast" title="Численная модель UKMET ">рассчитан автоматически</a> без контроля и корректировки специалистом.</span><br>
+</td><td style='border-bottom: 1px solid #ddd;' width='10'><img src="/tpl/img/data-main.gif" alt=""></td>
+
+
+<td width='7%' class='dat'  bgcolor="#F2F2FF">вечер, пн.<br>21 сентября</td>
+<td width='7%' class='dat'  bgcolor="#F2F2FF">ночь, вт.<br>22 сентября</td>
+<td width='7%' class='dat' >утро, вт.<br>22 сентября</td>
+<td width='7%' class='dat' >день, вт.<br>22 сентября</td>
+<td width='7%' class='dat'  bgcolor="#F2F2FF">вечер, вт.<br>22 сентября</td>
+<td width='7%' class='dat'  bgcolor="#F2F2FF">ночь, ср.<br>23 сентября</td>
+<td width='7%' class='dat' >утро, ср.<br>23 сентября</td>
+<td width='7%' class='dat' >день, ср.<br>23 сентября</td>
+<td width='7%' class='dat'  bgcolor="#F2F2FF">вечер, ср.<br>23 сентября</td>
+<td width='7%' class='dat'  bgcolor="#F2F2FF">ночь, чт.<br>24 сентября</td>
+</tr>
+<tr>
+<td class='legend'>Облачность и погодные явления</td><td>&nbsp;</td>
+ <td class='meteo'>
+ <img title='Ясно.Без осадков.' src='6/pict-40/SKCn.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Ясно.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Переменная облачность.Без осадков.Туман.Видимость 400-600 м.' src='6/pict-40/FG.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Переменная облачность.Без осадков.Туман.'></td>
+ <td class='meteo'>
+ <img title='Сплошная облачность.Без осадков.Туман.Видимость 400-600 м.' src='6/pict-40/FG.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Сплошная облачность.Без осадков.Туман.'></td>
+ <td class='meteo'>
+ <img title='Сплошная облачность.Без осадков.' src='6/pict-40/OVC.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Сплошная облачность.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Облачно с прояснениями.Без осадков.' src='6/pict-40/BKNn.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Облачно с прояснениями.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Переменная облачность.Без осадков.' src='6/pict-40/SCTn.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Переменная облачность.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Сплошная облачность.Без осадков.' src='6/pict-40/OVC.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Сплошная облачность.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Небольшая облачность.Без осадков.' src='6/pict-40/FEW.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Небольшая облачность.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Ясно.Без осадков.' src='6/pict-40/SKCn.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Ясно.Без осадков.'></td>
+ <td class='meteo'>
+ <img title='Пасмурно.Без осадков.Туман.Видимость 500-800 м.' src='6/pict-40/FG.png' width='40' height='40' vspace='4' hspace='6' alt='Явление погоды:Пасмурно.Без осадков.Туман.'></td>
+</tr>
+<tr>
+<td class='legend'>Температура, °С</td><td>&nbsp;</td>
+ <td class='meteo' title='Tmax=13.5 Tmin=10.8'>+10..+12</td>
+ <td class='meteo' title='Tmax=9.5 Tmin=8.8'>+8..+10</td>
+ <td class='meteo' title='Tmax=9.9 Tmin=8.9'>+9..+11</td>
+ <td class='meteo' title='Tmax=14 Tmin=12.8'>+13..+15</td>
+ <td class='meteo' title='Tmax=13.6 Tmin=11.4'>+10..+12</td>
+ <td class='meteo' title='Tmax=10.9 Tmin=9.8'>+9..+11</td>
+ <td class='meteo' title='Tmax=11.4 Tmin=10'>+10..+12</td>
+ <td class='meteo' title='Tmax=19.3 Tmin=16'>+18..+20</td>
+ <td class='meteo' title='Tmax=18.7 Tmin=16.2'>+15..+17</td>
+ <td class='meteo' title='Tmax=15.2 Tmin=14.7'>+14..+16</td>
+</tr>
+<tr>
+<td class='legend' nowrap>Скорость и направление ветра, м/с</td><td>&nbsp;</td>
+ <td class='meteo' valign='top'> 4–6, Западный </td>
+ <td class='meteo' valign='top'> 3–5, Ю-З </td>
+ <td class='meteo' valign='top'> 2–4, Ю-З </td>
+ <td class='meteo' valign='top'> 2–4, Южный </td>
+ <td class='meteo' valign='top'> 3–5, Ю-В </td>
+ <td class='meteo' valign='top'> 4–6, Ю-В </td>
+ <td class='meteo' valign='top'> 5–7, Ю-В </td>
+ <td class='meteo' valign='top'> 6–8, Ю-В,&nbsp;<br>порывы 12 </td>
+ <td class='meteo' valign='top'> 4–6, Ю-В </td>
+ <td class='meteo' valign='top'> 3–5, Ю-В </td>
+</tr>
+<tr>
+<td class='legend'>Атмосферное давление,<br>приведенное уровню моря, гПа <span style='color:#888888;'> [мм рт. ст.] </span></td><td>&nbsp;</td>
+ <td class='meteo'>1013<br><span style='color:#888;'>759</span></td>
+ <td class='meteo'>1015<br><span style='color:#888;'>761</span></td>
+ <td class='meteo'>1017<br><span style='color:#888;'>763</span></td>
+ <td class='meteo'>1018<br><span style='color:#888;'>763</span></td>
+ <td class='meteo'>1017<br><span style='color:#888;'>763</span></td>
+ <td class='meteo'>1017<br><span style='color:#888;'>763</span></td>
+ <td class='meteo'>1017<br><span style='color:#888;'>763</span></td>
+ <td class='meteo'>1016<br><span style='color:#888;'>762</span></td>
+ <td class='meteo'>1017<br><span style='color:#888;'>763</span></td>
+ <td class='meteo'>1018<br><span style='color:#888;'>764</span></td>
+</tr>
+<tr>
+<td class='legend'>Влажность, %</td><td>&nbsp;</td>
+ <td class='meteo'>90</td>
+ <td class='meteo'>95</td>
+ <td class='meteo'>95</td>
+ <td class='meteo'>70</td>
+ <td class='meteo'>85</td>
+ <td class='meteo'>90</td>
+ <td class='meteo'>85</td>
+ <td class='meteo'>65</td>
+ <td class='meteo'>90</td>
+ <td class='meteo'>99</td>
+</tr>
+<tr>
+<td class='legend'>Количество осадков, мм за 6 ч </td><td>&nbsp;</td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td>
+ <td class='meteo'> — </td></tr>
+</table></div>
+
+<!-- место №4 100% на 60 -->
+<div class="promo"> <noindex>
+<!--/* OpenX Javascript Tag v2.8.7 */-->
+<script type='text/javascript'><!--//<![CDATA[
+   document.MAX_ct0 ='INSERT_CLICKURL_HERE';
+
+   var m3_u = (location.protocol=='https:'?'https://80.94.164.94/Admin/openx/www/delivery/ajs.php':'http://80.94.164.94/Admin/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=18");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
+       document.write ("&amp;ct0=" + escape(document.MAX_ct0));
+   }
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://80.94.164.94/Admin/openx/www/delivery/ck.php?n=ad951755&amp;cb=18' target='_blank'><img src='http://80.94.164.94/Admin/openx/www/delivery/avw.php?zoneid=18&amp;cb=18&amp;n=ad951755&amp;ct0=INSERT_CLICKURL_HERE' border='0' alt='' /></a></noscript>
+</noindex> </div>
+<!-- конец разделителей -->
+
+<!--  разделитель. Ниже - в 3 колонки -->
+<div id="outer_wrapper">
+	<div id="wrapper">
+	   <div id="container">
+		  <div id="content">
+			<div id="left">
+
+
+<h3>Карты и графики</h3>
+<p>
+&#9642; <a href="/mg/?city=26850">Метеограммы <strong>Минск</strong></a><br>
+&#9642; <a title="Карта прогноза энергии неустойчивости" target="_blank" href="/get?q=17">Карта прогноза гроз</a><br>
+<!-- &#9642; <a title="Карта молний" target="_blank" href="/get/?q=blitz_map">Грозопеленгатор. Карта молний</a><br> -->
+<!-- &#9642; <a title="Карта снежного покрова. Анализ" target="_blank" href="/get?q=15">Карта снежного покрова</a> <sup style='color:red;'>new!</sup><br>  -->
+&#9642; <a title="Карта порывов ветра. Анализ" target="_blank" href="/get/?q=wind_map">Карта порывов ветра</a><br>
+&#9642; <a title="Карта максимальной температуры воздуха. Анализ" target="_blank" href="/get?q=max_temperature">Максимальная температура</a><br>
+&#9642; <a title="Карта минимальной температуры воздуха. Анализ" target="_blank" href="/get?q=min_temperature">Минимальная температура</a><br>
+&#9642; <a title="Карта прогноза температуры воздуха 12 ч" target="_blank" href="/get?q=10">Карта прогноза температуры</a><br>
+&#9642; <a title="Карта прогноза осадков на 12 ч" target="_blank" href="/get?q=11">Карта прогноза осадков</a><br>
+&#9642; <a title="Карта относительной топографии на 12 ч" target="_blank" href="/get?q=16">Карта OT500/1000</a><br>
+&#9642; <a title="Карта прогноза скорости ветра на 12 ч" target="_blank" href="/get/?q=12">Карта прогноза скорости ветра</a><br>
+&#9642; <a title="Карта прогноза средней облачности 12 ч" target="_blank" href="/get?q=13">Карта прогноза облачности</a><br>
+&#9642; <a title="Черное, Средиземное, Балтика" href="/get?q=14" target="_blank">Температура моря</a><br>
+</p>
+<div class='lHR' style='margin:0;'>&nbsp;</div>
+<!-- место №6 300 на 240 -->
+<div id="yandex_ad-l" style="width:240px; border:0px; margin:2px 0px 2px 0px; font:normal 8pt Tahoma;"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(109783, "yandex_ad-l", {
+            ad_format: "direct",
+            font_size: 0.9,
+            type: "flat",
+            limit: 1,
+            title_font_size: 1,
+            links_underline: false,
+            site_bg_color: "F2F2F2",
+            header_bg_color: "",
+            title_color: "0066FF",
+            url_color: "006600",
+            text_color: "555555",
+            hover_color: "0066FF",
+            sitelinks_color: "0000CC",
+            favicon: true,
+            no_sitelinks: true
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script><div class='lHR' style='margin:-9px 0 6px 0;'>&nbsp;</div><!-- сеноптеги только для РБ-->
+<h3>Прогноз синоптика</h3>
+<div><h4><u>Минск</u></h4>
+<p><b>Погода на завтра, 22.09</b></p>
+<table width='238' cellspacing='0' cellpadding='0' class='synoptic'><tr>
+	<td width=30%><img src='/pic2/40-s3.png' width='40' height='40' alt='?????????? ??????????' title='Переменная облачность. Без существенных осадков. Ночью и' vspace='4'></td>
+	<td width='*' class='synoptic_T'>+15..+17°&nbsp;</td>
+	</tr>
+	<tr><td colspan=2></td></tr>
+	<tr><td colspan=2>Переменная облачность. Без существенных осадков. Ночью и&nbsp;<a href='/get/?q=synoptic_forecast'>утром местами по городу&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></td></tr></table>
+</div>
+<div class='HR' align='right'>&nbsp;</div>
+<div style="margin:0px 6px; font:normal 8pt Arial;"><a href="http://ultra.by/" target="_blank">Интернет магазин в Минске Ultra.by</a></div>
+<!-- меню карты -->
+<!-- Озон -->
+&nbsp;
+<h3>Сайты-партнёры</h3>
+<p><a href='/get/?q=4' title='' target='_blank'><img src='tpl/ico/president_88x37.gif' width='88' height='37' border='0' alt=''></a></p>
+<p><a href='/get/?q=8' title='MEЖГОСУДАРСТВЕННЫЙ СОВЕТ ПО ГИДРОМЕТЕОРОЛОГИИ СНГ' target='_blank'><img src='tpl/ico/msg_sng_90x16.gif' width='90' height='16' border='0' alt='МСГ СНГ'></a>&nbsp;
+<a href='/get/?q=5' title='РЦРКМ' target='_blank'><img src='tpl/ico/rcrkm_90x16.gif' width='90' height='16' border='0' alt='ЦРКМ'></a>&nbsp;
+</p>
+<div class='lHR' style='margin:0;'>&nbsp;</div>
+
+<!-- пс //-->
+	<div style="margin-top:250px; background: #ffffff url(/tpl/img/bg-div-l.gif);">
+<p class='sp'><script type="text/javascript">
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="//www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+</script></p><p class='sp'></p>
+	</div>
+</div>
+
+<!-- СРЕДНЯЯ КОЛОНКА -->
+<div id="main">
+<!-- шторма -->
+
+	<script  type="text/javascript">
+	<!--
+	function switch_TS_or_WS_More(){
+	with (document.getElementById('TS_or_WS_More'))	{
+	style.display = (style.display != 'none') ? 'none' : '';
+	document.getElementById('TS_or_WS_Sign').innerHTML = (style.display == 'none') ? '<acronym title="Показать +">Неблагоприятные явления погоды</acronym>' : '<acronym title="Убрать -">Неблагоприятные явления погоды</acronym>';
+	}
+	}
+	// -->
+	</script>
+
+	<h3>Плохая погода</h3>
+	<p><b><a href="javascript:switch_TS_or_WS_More();" id="TS_or_WS_Sign" style="cursor: pointer;"><acronym title="Показать все">Неблагоприятные явления погоды</a></acronym></b>:
+	<strong>Минск</strong></p>
+<div id='TS_or_WS_More' style='display:none; text-align:left;'>
+<p><b>21.09</b> 03:15 <a href='/?city=%CC%E8%ED%F1%EA'>Минск</a>. Дождь. Количество осадков:017 мм.</p>
+		</div>
+	<div>&nbsp;</div>
+<!-- №8 100% 80/240-->
+
+<h3>Метеоновости</h3>
+
+
+<!-- news #28594-->
+<h4>21.09. Рост уровней воды</h4>
+
+<p class='news'>В результате выпадения осадков на реках страны почти повсеместно наблюдается рост уровней воды, суточная интенсивность его составляет 1-42 см.<br> На судоходных&nbsp;<a href = '../news/?page=28594' title='«Рост уровней воды»'>участках рек сохраняются неблагоприятные&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28593-->
+<h4>21.09. После заморозков вновь жара</h4>
+
+<p class='news'>Сегодня погоду в стране определяет в основном влажная и прохладная воздушная масса, поступающая с побережья Балтики, на востоке страны сохранится влияние малоподвижного фронта. <br> До&nbsp;<a href = '../news/?page=28593' title='«После заморозков вновь жара»'>конца дня на большей&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28592-->
+<h4>21.09. Заморозки на торфяниках Полесья</h4>
+
+<p class='news'>В ночь на 22 сентября (вторник) местами на торфяниках Полесья&nbsp;<a href = '../news/?page=28592' title='«Заморозки на торфяниках Полесья»'>ожидаются заморозки до 0..-1°С.&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28590-->
+<h4>21.09. Отмечались сильные дожди</h4>
+
+<p class='news'>В истекшие трое суток наблюдалась неустойчивая погода. Днем 19 сентября сохранялась сухая аномально теплая погода со среднесуточной температурой воздуха +18..+23°С, что на&nbsp;<a href = '../news/?page=28590' title='«Отмечались сильные дожди»'>7-11°С выше климатической нормы&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28588-->
+<h4>21.09. Прогноз погоды</h4>
+
+<p class='news'>Облачно с прояснениями. На большей части территории кратковременные дожди, местами грозы. Ветер западный умеренный, при грозах порывистый. Максимальная температура воздуха +14 +20,&nbsp;<a href = '../news/?page=28588' title='«Прогноз погоды»'>по юго-востоку до +22.&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28586-->
+<h4>20.09. В Беларуси сильные дожди</h4>
+
+<p class='news'>Сегодня, 20 сентября, погоду Беларуси будут определять атмосферные фронты, смещающиеся с юго-запада Европы. До конца дня на большей части территории пройдут дожди, во многих&nbsp;<a href = '../news/?page=28586' title='«В Беларуси сильные дожди»'>районах сильные дожди, местами&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28584-->
+<h4>20.09. <img title='Выписано в 11:48 время местное' alt='штормовое предупреждение' src='/img2/warning16-1.gif'>  Предупреждение о неблагоприятном явлении</h4>
+<p class='news' style='padding-left: 18px; background:#FFF url(/tpl/img/orange.gif) repeat-y;'>В ночные часы 21 сентября (понедельник) по северо-востоку республики ожидаются сильные дожди. </p>
+
+<!-- news #28583-->
+<h4>20.09. <img title='Выписано в 08:04 время местное' alt='штормовое предупреждение' src='/img2/warning16-1.gif'>  Предупреждение о неблагоприятном явлении</h4>
+<p class='news' style='padding-left: 18px; background:#FFF url(/tpl/img/orange.gif) repeat-y;'> Сегодня днем 20 сентября (воскресенье) на большей части территории страны, и во второй половине дня в Минске   ожидаются сильные дожди.
+
+</p>
+
+<!-- news #28581-->
+<h4>20.09. Прогноз погоды на день 20 сентября</h4>
+
+<p class='news'>Сегодня, 20 сентября, территория Беларуси будет находиться под влиянием активных атмосферных фронтов, смещающихся с Карпат. Ожидается дождливая погода. На большей части&nbsp;<a href = '../news/?page=28581' title='«Прогноз погоды на день 20 сентября»'>территории республики пройдут сильные&nbsp;<span style='font: normal 13px Arial;'>&rarr;</span></a></p>
+
+<!-- news #28580-->
+<h4>19.09. <img title='Выписано в 18:34 время местное' alt='штормовое предупреждение' src='/img2/warning16-1.gif'>  Предупреждение о неблагоприятном явлении</h4>
+<p class='news' style='padding-left: 18px; background:#FFF url(/tpl/img/orange.gif) repeat-y;'> Сегодня 19 сентября (суббота) до конца дня по юго-востоку Беларуси сохранятся  грозы, при грозах местами ожидаются  сильные ливни. 
+  
+</p>
+<div class="HR" align="right">&nbsp;<a href="/news/">&#8594; АРХИВ НОВОСТЕЙ</a>&nbsp;</div>
+<h3>Метеорологическая обстановка</h3>
+
+<p style="float:left; margin:2px;">
+<a href="/get/?q=max_temperature" target="_blank">
+<img src="/thumbnails/max.jpg" border="1" width="115" height="100" alt="Карта температура максимальная"></a><br>
+Температура<br>максимальная
+</p>
+
+<p style="float:left; margin:2px;"><a href="/get/?q=min_temperature" target="_blank"><img src="/thumbnails/min.jpg" border="1" width="115" height="100" alt="Карта температура минимальная"></a>
+<br>Температура<br>минимальная</p>
+
+<p style="float:left; margin:2px;"><a href="/get/?q=sum_precipitation" target="_blank"><img src="/thumbnails/pcp-n.jpg" border="1" width="115" height="100" alt="Карта количества осадков за 12 ч"></a>
+<br>Количество<br>осадков за 12 ч</p>
+<!--
+<p style="float:left; margin:2px;"><a href="/get/?q=15" target="_blank"><img src="/thumbnails/snow.jpg" border="1" width="115" height="100" alt="Карта снега"></a>
+<br>Карта снежного<br>покрова</p>
+-->
+<p style="float:left; margin:2px;"><a href="/thumbnails/?map=radar_map"><img src="/thumbnails/26850.jpg" border="1" width="126" height="100" alt="метеорадар"></a>
+<br>Радарные карты</p>
+<div style='clear:both;'>&nbsp;</div>
+<div class="HR" align="right">&nbsp;<a href="/thumbnails/" title="карты погоды">&#8594; ВСЕ КАРТЫ</a>&nbsp;</div>
+</div>
+</div>
+</div>
+
+
+<!-- ПРАВАЯ КОЛОНКА -->
+<div id="sidebar">
+<h3>Статьи и публикации</h3>
+<p><img src='/tpl/img/page.gif' border='0' hspace='2' alt='добавлено 09.09.'> <a href='/press-release/?page=491' title='«Доклад о гидрометеорологических условиях...». Добавлено 09.09.'>Доклад о гидрометеорологических условиях на территории Беларуси в августе 2015 года</a></p>
+<p><img src='/tpl/img/page.gif' border='0' hspace='2' alt='добавлено 07.09.'> <a href='/press-release/?page=490' title='«Погода: как это работает...». Добавлено 07.09.'>Погода: как это работает</a></p>
+<p><img src='/tpl/img/page.gif' border='0' hspace='2' alt='добавлено 25.08.'> <a href='/press-release/?page=489' title='«Агрометеорологический бюллетень  ...». Добавлено 25.08.'>Агрометеорологический бюллетень</a></p>
+<p><img src='/tpl/img/page.gif' border='0' hspace='2' alt='добавлено 14.08.'> <a href='/press-release/?page=488' title='«Климатические характеристики Беларуси в...». Добавлено 14.08.'>Климатические характеристики Беларуси в первой декаде августа 2015</a></p>
+<p><img src='/tpl/img/page.gif' border='0' hspace='2' alt='добавлено 10.08.'> <a href='/press-release/?page=487' title='«Температурные рекорды за 7-9...». Добавлено 10.08.'>Температурные рекорды за 7-9 августа 2015 г</a></p>
+<div id="press" class="HR" align="right">&nbsp;<a href="/press-release/">&#8594; АРХИВ</a>&nbsp;</div>
+
+
+
+
+
+
+<h3>Температура морской воды</h3>
+<p>Самое холодное — Азовское море<br>Температура воды 12.6&#176;C в г.<a href="/34727" title="Россия">Ейск</a></p><p>Самое теплое — Красное море<br>Температура воды 29.7&#176;C в г.<a href="/62461" title="Египет">Сома бей</a></p><div class="HR" align="right">&nbsp;<a href="/gidro/">&#8594; ВСЕ КУРОРТЫ</a>&nbsp;</div>
+<h3>Метеорекорды Беларуси</h3>
+
+
+<p><strong>Этот день в истории метеонаблюдений</strong></p>
+
+<p>Теплее всего: Высокое&nbsp;+28.50&deg;C — в 2003 г.</p>
+<p>Холоднее всего: Кличев&nbsp;-4.10&deg;С — в 1996 г.</p>
+<p>Больше всего осадков: Василевичи. 26.20 мм выпало в 1899 г.</p><p class='P_column'><div class='HR' align='right'>&nbsp;<a href='/get/?q=hmc.by/climat' target='_blank'>&#8594; РЕКОРДЫ ПОГОДЫ</a>&nbsp;</div>
+
+<!-- место №5 -->
+
+<!-- конец разделителей -->
+
+
+<h3>Почитать</h3>
+<div><style type="text/css" media="screen">
+	/*<![CDATA[*/
+	div#yd {
+	border:0;
+	font: normal 10pt Arial;
+	margin:2px; padding:2px;
+	text-decoration: none;
+	}
+	div#yd a {
+	text-decoration: none;
+	font: normal 10pt Arial;
+	}
+	/*]]>*/
+</style>
+
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7221" target='_blank'>О погоде в Москве и области вечером</a></p>
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7216" target='_blank'>В Новороссийске ожидается бора</a></p>
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7214" target='_blank'>Сейчас в Москве</a></p>
+<div class='lHR' align='right'>&nbsp;</div><h3>Информация МЧС Беларуси</h3>
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7212" target='_blank'>Самолёт Минск - Рим вернулся в аэропорт вылета. Пострадавших нет</a></p>
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7202" target='_blank'>Мать и сына спасли в Минске из подвала частного дома</a></p>
+<p><strong>Оперативная сводка</strong></p>
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7208" target='_blank'>Оперативное предупреждение Гидрометеоцентра о неблагоприятном метеорологическом явлении на 22 сентября 2015 года</a></p>
+<p>21.09.&nbsp;<a href="/rss-fwlink/?7195" target='_blank'>Информация о чрезвычайных ситуациях №264 с 06-00 часов 20 сентября 2015 г. до 06-00 часов 21 сентября 2015 г.</a></p>
+</div>
+<div class='lHR' style='margin:0;'>&nbsp;</div>
+
+
+<!-- RSS -->
+<h3>Экспорт погоды</h3>
+<p>
+<a href='/rss2/rss.php' title='Метеопрогноз по Беларуси'><img src='tpl/ico/feed-small.gif' width='16' height='16' border='0' alt='rss-лента'>Метеопрогноз по Беларуси</a><br>
+<a href='/rss2/storm.php' title='Штормовые предупреждения'><img src='tpl/ico/feed-small.gif' width='16' height='16' border='0' alt='rss-лента'>Штормовые предупреждения</a><br>
+<a href='/rss2/hydro.php' title='Гидрологическая обстановка по Беларуси'><img src='tpl/ico/feed-small.gif' width='16' height='16' border='0' alt='rss-лента'>Гидрологическая обстановка</a><br>
+<a href='/rss2/rss_pogoda.by.php' title='Метеоновости POGODA.BY'><img src='tpl/ico/feed-small.gif' width='16' height='16' border='0' alt='rss-лента'>Метеоновости POGODA.BY</a>
+</p><div class='lHR' style='margin:0;'>&nbsp;</div>
+
+
+<!--баннеры //-->
+	<div style="margin-top:50px; background: #ffffff url(/tpl/img/bg-div-l.gif);">
+<p class='sp'></p><p class='sp'></p>
+<p class='sp'>При участии <a  href='http://go-grafix.com' target="_blank">Го-графикс</a></p>	</div>
+
+			</div>
+		<div class="clearing">&nbsp;</div>
+	</div>
+</div>
+<div id="footer"><a href='mailTo:master@pogoda.by' title='Электропочта'><img src='/img2/post.gif' width='16' height='11' border='0' alt='написать POGODA.BY'></a>&nbsp;<a href='/'>POGODA.BY</a>&nbsp;© 2001-2015<noindex>
+<!--LiveInternet counter-->
+<script type="text/javascript">
+<!--
+document.write('<a href="http://www.liveinternet.ru/click" '+
+'target=_blank><img src="http://counter.yadro.ru/hit?t26.11;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';'+Math.random()+
+'" alt="" title="LiveInternet:" '+
+'border=0 width=88 height=15><\/a>')//-->
+</script>
+<!--/LiveInternet-->
+
+
+<!-- Akavita counter code -->
+<a rel="nofollow" target="_blank" href="http://adlik.akavita.com/bin/link?id=4521">
+<script type="text/javascript">
+<!--
+d=document;w=window;n=navigator;d.cookie="cc=1";
+r=''+escape(d.referrer);js=10;c=(d.cookie)?1:0;j=0;
+x=Math.random();u=''+escape(w.location.href);lt=0;
+h=history.length;t=new Date;f=(self!=top)?1:0;cd=0;
+tz=t.getTimezoneOffset();cpu=n.cpuClass;ww=wh=ss=0;
+//--></script>
+      <script language="javascript1.1"><!--
+js=11;j=(n.javaEnabled()?1:0);
+//--></script>
+<script language="javascript1.2"><!--
+js=12;lt=1;s=screen;ss=s.width;
+cd=(s.colorDepth?s.colorDepth:s.pixelDepth);
+//--></script>
+      <script language="javascript1.3"><!--
+js=13;wh=w.innerHeight;ww=w.innerWidth;
+wh=(wh?wh:d.documentElement.offsetHeight);
+ww=(ww?ww:d.documentElement.offsetWidth);
+//--></script>
+<script type="text/javascript"><!--
+q='lik?id=4521&d='+u+'&r='+r+'&h='+h+'&f='+f;
+q+='&c='+c+'&tz='+tz+'&cpu='+cpu+'&js='+js+'&wh='+wh;
+q+='&ww='+ww+'&ss='+ss+'&cd='+cd+'&j='+j+'&x='+x;
+d.write('<img src="http://adlik.akavita.com/bin/'+
+q+'" alt="Akavita" '+
+'border=0 width=1 height=1>');
+if(lt){d.write('<'+'!-- ');}//--></script>
+<noscript><img src="http://adlik.akavita.com/bin/lik?id=4521"
+border=0 height=1 width=1 alt="Akavita" hspace="3"></noscript>
+<script type="text/javascript">
+<!--
+if(lt){d.write('--'+'>');}//-->
+</script>
+</a>
+<!--/Akavita-->
+
+<!-- (C)2000-2015 / pogoda.by / Home Page -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = 'nSBLcnskkL5RSUUZbpZKCpYUfXVRz8dzBkCatGA7llz.B7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://gaby.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+<!-- /gemiusAudience -->
+</noindex>&#155;</div>
+</div>
+</body>
+</html>
